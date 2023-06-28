@@ -11,17 +11,23 @@
                 @csrf
                 <div class="mb-4">
                     <label for="email" class="text-gray-800">Email</label>
-                    <input type="email" name="email" class="block w-full py-2 px-3 mt-1 text-base text-gray-800 bg-white border border-gray-300 rounded" required>
+                    <input type="email" name="email"
+                        class="block w-full py-2 px-3 mt-1 text-base text-gray-800 bg-white border border-gray-300 rounded"
+                        required>
                 </div>
 
                 <div class="mb-4">
                     <label for="nama_lengkap" class="text-gray-800">Nama Lengkap</label>
-                    <input type="text" name="nama_lengkap" class="block w-full py-2 px-3 mt-1 text-base text-gray-800 bg-white border border-gray-300 rounded" required>
+                    <input type="text" name="nama_lengkap"
+                        class="block w-full py-2 px-3 mt-1 text-base text-gray-800 bg-white border border-gray-300 rounded"
+                        required>
                 </div>
 
                 <div class="mb-4">
                     <label for="gender" class="text-gray-800">Jenis Kelamin</label>
-                    <select name="gender" class="block w-full py-2 px-3 mt-1 text-base text-gray-800 bg-white border border-gray-300 rounded" required>
+                    <select name="gender"
+                        class="block w-full py-2 px-3 mt-1 text-base text-gray-800 bg-white border border-gray-300 rounded"
+                        required>
                         <option value="Laki-laki">Laki-laki</option>
                         <option value="Perempuan">Perempuan</option>
                     </select>
@@ -29,22 +35,29 @@
 
                 <div class="mb-4">
                     <label for="tempat_lahir" class="text-gray-800">Kota Tempat Lahir</label>
-                    <input type="text" name="tempat_lahir" class="block w-full py-2 px-3 mt-1 text-base text-gray-800 bg-white border border-gray-300 rounded" required>
+                    <input type="text" name="tempat_lahir"
+                        class="block w-full py-2 px-3 mt-1 text-base text-gray-800 bg-white border border-gray-300 rounded"
+                        required>
                 </div>
 
                 <div class="mb-4">
                     <label for="tanggal_lahir" class="text-gray-800">Tanggal Lahir</label>
-                    <input type="date" name="tanggal_lahir" class="block w-full py-2 px-3 mt-1 text-base text-gray-800 bg-white border border-gray-300 rounded" required>
+                    <input type="date" name="tanggal_lahir"
+                        class="block w-full py-2 px-3 mt-1 text-base text-gray-800 bg-white border border-gray-300 rounded"
+                        required>
                 </div>
 
                 <div class="mb-4">
                     <label for="alamat_lengkap" class="text-gray-800">Alamat Lengkap</label>
-                    <textarea name="alamat_lengkap" class="block w-full py-2 px-3 mt-1 text-base text-gray-800 bg-white border border-gray-300 rounded" required></textarea>
+                    <textarea name="alamat_lengkap"
+                        class="block w-full py-2 px-3 mt-1 text-base text-gray-800 bg-white border border-gray-300 rounded" required></textarea>
                 </div>
 
                 <div class="mb-4">
                     <label for="status" class="text-gray-800">Status</label>
-                    <select name="status" class="block w-full py-2 px-3 mt-1 text-base text-gray-800 bg-white border border-gray-300 rounded" required>
+                    <select name="status"
+                        class="block w-full py-2 px-3 mt-1 text-base text-gray-800 bg-white border border-gray-300 rounded"
+                        required>
                         <option value="Sudah Menikah">Sudah Menikah</option>
                         <option value="Belum Menikah">Belum Menikah</option>
                         <option value="Janda">Janda</option>
@@ -54,36 +67,46 @@
 
                 <div class="mb-4">
                     <label for="pekerjaan" class="text-gray-800">Pekerjaan</label>
-                    <input type="text" name="pekerjaan" class="block w-full py-2 px-3 mt-1 text-base text-gray-800 bg-white border border-gray-300 rounded" required>
+                    <input type="text" name="pekerjaan"
+                        class="block w-full py-2 px-3 mt-1 text-base text-gray-800 bg-white border border-gray-300 rounded"
+                        required>
                 </div>
 
                 <div class="mb-4">
                     <label for="no_hp" class="text-gray-800">No.Telp / WA</label>
-                    <input type="text" name="no_hp" class="block w-full py-2 px-3 mt-1 text-base text-gray-800 bg-white border border-gray-300 rounded" required>
+                    <input type="text" name="no_hp"
+                        class="block w-full py-2 px-3 mt-1 text-base text-gray-800 bg-white border border-gray-300 rounded"
+                        required>
                 </div>
 
                 <div class="mb-4">
                     <label for="organisasi_diikuti" class="text-gray-800">Komunitas / Organisasi yang Diikuti</label>
-                    <textarea name="organisasi_diikuti" class="block w-full py-2 px-3 mt-1 text-base text-gray-800 bg-white border border-gray-300 rounded" required></textarea>
+                    <textarea name="organisasi_diikuti"
+                        class="block w-full py-2 px-3 mt-1 text-base text-gray-800 bg-white border border-gray-300 rounded" required></textarea>
                 </div>
 
                 <div class="mb-4">
                     <label for="tentang_paskas" class="text-gray-800">Apa yang Diketahui tentang PASKAS/GIB</label>
-                    <textarea name="tentang_paskas" class="block w-full py-2 px-3 mt-1 text-base text-gray-800 bg-white border border-gray-300 rounded" required></textarea>
+                    <textarea name="tentang_paskas"
+                        class="block w-full py-2 px-3 mt-1 text-base text-gray-800 bg-white border border-gray-300 rounded" required></textarea>
                 </div>
 
                 <div class="mb-4">
                     <input type="checkbox" name="pilar_paskas" value="siap" id="pilar_paskas" class="mr-2">
-                    <label for="pilar_paskas" class="text-gray-800">Konfirmasi kemampuan untuk melaksanakan pilar dakwah PASKAS (Birrul Walidain, Membaca Al Qur'an 1 hari 1 halaman, Sholat Tepat Awal Waktu dan Infaq minimal 25.000 sebulan)</label>
+                    <label for="pilar_paskas" class="text-gray-800">Konfirmasi Kesanggupan untuk melaksanakan pilar dakwah
+                        PASKAS (Birrul Walidain, Membaca Al Qur'an 1 hari 1 halaman, Sholat Tepat Awal Waktu dan Infaq
+                        minimal 25.000 sebulan)</label>
                 </div>
 
                 <div class="mb-4">
                     <label for="doa_harapan" class="text-gray-800">Do’a dan Harapan terhadap PASKAS</label>
-                    <textarea name="doa_harapan" class="block w-full py-2 px-3 mt-1 text-base text-gray-800 bg-white border border-gray-300 rounded" required></textarea>
+                    <textarea name="doa_harapan"
+                        class="block w-full py-2 px-3 mt-1 text-base text-gray-800 bg-white border border-gray-300 rounded" required></textarea>
                 </div>
 
                 <div class="flex mt-10">
-                    <button type="submit" class="px-6 py-2 font-semibold text-white bg-blue-600 rounded hover:bg-blue-800">Simpan</button>
+                    <button type="submit"
+                        class="px-6 py-2 font-semibold text-white bg-blue-600 rounded hover:bg-blue-800">Simpan</button>
                 </div>
             </form>
         </div>

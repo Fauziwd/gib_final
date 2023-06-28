@@ -50,8 +50,10 @@ class AnggotaController extends Controller
     public function show($id)
     {
         $anggota = Anggota::findOrFail($id);
+        $anggota->load('verifikasiCalonAnggota.calonAnggota');
+    
         return view('sistem_anggota.anggota.show', compact('anggota'));
-    }
+    }    
 
     public function edit($id)
     {       

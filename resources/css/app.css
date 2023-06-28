@@ -30,7 +30,7 @@
     max-width: 500px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f9f9f9;
+    
     border: 1px solid #ddd;
     border-radius: 5px;
   }
@@ -47,8 +47,7 @@
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 4px;
-    background-color: #fdd;
-    color: #c00;
+      color: #c00;
   }
   
   .form-container .form-group {
@@ -82,16 +81,12 @@
     border-radius: 4px;
     font-size: 16px;
     color: #fff;
-    background-color: #337ab7;
+    
     text-decoration: none;
     cursor: pointer;
   }
   
-  .form-container button[type="submit"]:hover,
-  .form-container a.button:hover {
-    background-color: #23527c;
-  }
-  
+
   @media (max-width: 768px) {
     .form-container {
       max-width: 100%;
@@ -104,7 +99,7 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f9f9f9;
+    
     border: 1px solid #ddd;
     border-radius: 5px;
   }
@@ -124,7 +119,7 @@
   }
   
   .bg-gray-ota {
-    background-color: #edf2f7;
+    
   }
   
   .border-b-ota {
@@ -201,7 +196,7 @@
   }
   
   .bg-blue-600-ota {
-    background-color: #3182ce;
+    
   }
   
   .text-white-ota {
@@ -209,7 +204,7 @@
   }
   
   .hover\:bg-blue-600-ota:hover {
-    background-color: #3182ce;
+    
   }
   
   /* Tampilan Tambahan */
@@ -222,7 +217,7 @@
   }
   
   .py-ota:hover {
-    background-color: #f2f2f2;
+    
   }
   
   .py-1-ota {
@@ -230,7 +225,7 @@
   }
   
   .py-1-ota:hover {
-    background-color: #e4e4e4;
+    
   }
   
   .bg-blue-600-ota {
@@ -238,7 +233,7 @@
   }
   
   .bg-blue-600-ota:hover {
-    background-color: #276bb0;
+    
   }
   
   .text-gray-900-ota {

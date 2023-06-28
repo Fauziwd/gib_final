@@ -35,7 +35,7 @@
     <div class="w-full md:w-1/2 flex justify-center items-center h-screen">
         <div class="text-center md:text-right px-10 mb-20">
             <h3 class="text-4xl md:text-5xl font-bold text-green-600 mb-8">Klik disini untuk memulai langkah anda ke
-                surga!</h3>
+                surga</h3>
 
             <form class="mt-8">
                 <div class="space-x-4">
@@ -43,10 +43,12 @@
                         <a href="{{ route('home') }}"
                             class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Home</a>
 
-                            @if(App\Models\User::count() === 0)
-                            <a href="{{ route('register') }}" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded" title="Hanya admin yang boleh masuk">Register</a>
+                        @if (App\Models\User::count() === 0)
+                            <a href="{{ route('register') }}"
+                                class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded"
+                                title="Hanya admin yang boleh masuk">Register</a>
                         @endif
-                        
+
                     @endauth
                     @guest
                         <a href="{{ route('login') }}" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded"
@@ -69,7 +71,7 @@
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <!-- Custom Script -->
     <script>
-        const sentences = ["Selamat datang di Gerakan Infak Beras!", "Ahlan wa Sahlan Calon Penghuni Surga!"];
+        const sentences = ["Selamat datang di Gerakan Infaq Beras", "Ahlan wa Sahlan Calon Penghuni Surga"];
         let index = 0;
 
         function typeSentence() {
@@ -80,7 +82,7 @@
                 afterComplete: function() {
                     setTimeout(() => {
                         index = (index + 1) % sentences
-                        .length; // Mengubah indeks untuk mengganti kalimat
+                            .length; // Mengubah indeks untuk mengganti kalimat
                         typingEffect.reset(); // Mereset efek pengetikan
                         typeSentence(); // Memulai pengetikan kalimat berikutnya
                     }, 3000); // Jeda 3 detik sebelum kalimat pertama muncul kembali

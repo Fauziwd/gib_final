@@ -61,7 +61,7 @@ class User2Controller extends Controller
         $user = User::with(['peran', 'anggota'])->findOrFail($id);
 
         return view('sistem_user.user.show', compact('user'));
-    }
+    } 
 
     public function edit($id)
     {

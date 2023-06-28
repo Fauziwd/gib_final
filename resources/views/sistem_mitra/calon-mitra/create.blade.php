@@ -4,16 +4,17 @@
 @section('content')
     <div class="container mx-auto sm:px-4 p-6 rounded border-gray-900">
         @auth
-    
-       
+
+
         @endauth
         <div class="flex justify-center items-center">
-            <div class="bg-green-200 mb-10 rounded-lg px-10 w-1/2">
+            <div class="bg-purple-200 dark:bg-blue-900 dark:text-white mb-10 rounded-lg px-10 w-1/2">
                 <h1 class="text-4xl font-bold text-center py-4">Form Calon Pondok Mitra</h1>
             </div>
         </div>
 
-        <a href="{{ route('calon-mitra.index') }}" class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-gray-600 text-white hover:bg-gray-700">Kembali</a>
+        <a href="{{ route('calon-mitra.index') }}"
+            class="inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-gray-600 text-white hover:bg-gray-700">Kembali</a>
         <form action="{{ route('calon-mitra.store') }}" method="POST">
             @csrf
 
@@ -24,7 +25,8 @@
                 <div>
                     <label class="font-bold" for="nama_pondok">Nama Pondok:</label>
                     <input type="text" name="nama_pondok" id="nama_pondok" value="{{ old('nama_pondok') }}"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        required>
                     @error('nama_pondok')
                         <span>{{ $message }}</span>
                     @enderror
@@ -32,7 +34,9 @@
 
                 <div>
                     <label class="font-bold" for="alamat">Alamat:</label>
-                    <textarea name="alamat" id="alamat" rows="3" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>{{ old('alamat') }}</textarea>
+                    <textarea name="alamat" id="alamat" rows="3"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        required>{{ old('alamat') }}</textarea>
                     @error('alamat')
                         <span>{{ $message }}</span>
                     @enderror
@@ -41,7 +45,8 @@
                 <div>
                     <label class="font-bold" for="tanggal_berdiri">Tanggal Berdiri:</label>
                     <input type="date" name="tanggal_berdiri" id="tanggal_berdiri" value="{{ old('tanggal_berdiri') }}"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        required>
                     @error('tanggal_berdiri')
                         <span>{{ $message }}</span>
                     @enderror
@@ -56,7 +61,8 @@
                 <div>
                     <label class="font-bold" for="nama_pimpinan">Nama Pimpinan:</label>
                     <input type="text" name="nama_pimpinan" id="nama_pimpinan" value="{{ old('nama_pimpinan') }}"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        required>
                     @error('nama_pimpinan')
                         <span>{{ $message }}</span>
                     @enderror
@@ -64,7 +70,8 @@
 
                 <div>
                     <label class="font-bold" for="profesi">Profesi Pimpinan:</label>
-                    <input type="text" name="profesi" id="profesi" value="{{ old('profesi') }}" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    <input type="text" name="profesi" id="profesi" value="{{ old('profesi') }}"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         required>
                     @error('profesi')
                         <span>{{ $message }}</span>
@@ -73,7 +80,9 @@
 
                 <div>
                     <label class="font-bold" for="alamat_pimpinan">Alamat Pimpinan:</label>
-                    <textarea name="alamat_pimpinan" id="alamat_pimpinan" rows="3" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>{{ old('alamat_pimpinan') }}</textarea>
+                    <textarea name="alamat_pimpinan" id="alamat_pimpinan" rows="3"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        required>{{ old('alamat_pimpinan') }}</textarea>
                     @error('alamat_pimpinan')
                         <span>{{ $message }}</span>
                     @enderror
@@ -82,7 +91,8 @@
                 <div>
                     <label class="font-bold" for="no_hp_pimpinan">No. HP Pimpinan:</label>
                     <input type="text" name="no_hp_pimpinan" id="no_hp_pimpinan" value="{{ old('no_hp_pimpinan') }}"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        required>
                     @error('no_hp_pimpinan')
                         <span>{{ $message }}</span>
                     @enderror
@@ -91,7 +101,9 @@
                 <div>
                     <label class="font-bold" for="jumlah_pengurus_menetap">Jumlah Pengurus Menetap:</label>
                     <input type="number" name="jumlah_pengurus_menetap" id="jumlah_pengurus_menetap"
-                        value="{{ old('jumlah_pengurus_menetap') }}" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                        value="{{ old('jumlah_pengurus_menetap') }}"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        required>
                     @error('jumlah_pengurus_menetap')
                         <span>{{ $message }}</span>
                     @enderror
@@ -100,7 +112,9 @@
                 <div>
                     <label class="font-bold" for="jumlah_pengurus_tidak_menetap">Jumlah Pengurus Tidak Menetap:</label>
                     <input type="number" name="jumlah_pengurus_tidak_menetap" id="jumlah_pengurus_tidak_menetap"
-                        value="{{ old('jumlah_pengurus_tidak_menetap') }}" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                        value="{{ old('jumlah_pengurus_tidak_menetap') }}"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        required>
                     @error('jumlah_pengurus_tidak_menetap')
                         <span>{{ $message }}</span>
                     @enderror
@@ -114,7 +128,9 @@
                 <div>
                     <label class="font-bold" for="jumlah_yatim_piatu">Jumlah Yatim Piatu:</label>
                     <input type="number" name="jumlah_yatim_piatu" id="jumlah_yatim_piatu"
-                        value="{{ old('jumlah_yatim_piatu') }}" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                        value="{{ old('jumlah_yatim_piatu') }}"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        required>
                     @error('jumlah_yatim_piatu')
                         <span>{{ $message }}</span>
                     @enderror
@@ -123,16 +139,18 @@
                 <div>
                     <label class="font-bold" for="jumlah_dhuafa">Jumlah Dhuafa:</label>
                     <input type="number" name="jumlah_dhuafa" id="jumlah_dhuafa" value="{{ old('jumlah_dhuafa') }}"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        required>
                     @error('jumlah_dhuafa')
                         <span>{{ $message }}</span>
                     @enderror
                 </div>
 
                 <div>
-                    <label class="font-bold" for="jumlah_dll">Jumlah DLL:</label>
+                    <label class="font-bold" for="jumlah_dll">Jumlah Lainnya:</label>
                     <input type="text" name="jumlah_dll" id="jumlah_dll" value="{{ old('jumlah_dll') }}"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="tulis dengan format, misal -> fakir: 12 ; jika tidak ada maka tulis : 0" required>
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="tulis dengan format, misal -> fakir: 12 ; jika tidak ada maka tulis : 0" required>
                     @error('jumlah_dll')
                         <span>{{ $message }}</span>
                     @enderror
@@ -141,7 +159,8 @@
                 <div>
                     <label class="font-bold" for="jumlah_tk">Jumlah TK:</label>
                     <input type="number" name="jumlah_tk" id="jumlah_tk" value="{{ old('jumlah_tk') }}"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        required>
                     @error('jumlah_tk')
                         <span>{{ $message }}</span>
                     @enderror
@@ -150,7 +169,8 @@
                 <div>
                     <label class="font-bold" for="jumlah_sd">Jumlah SD:</label>
                     <input type="number" name="jumlah_sd" id="jumlah_sd" value="{{ old('jumlah_sd') }}"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        required>
                     @error('jumlah_sd')
                         <span>{{ $message }}</span>
                     @enderror
@@ -159,7 +179,8 @@
                 <div>
                     <label class="font-bold" for="jumlah_smp">Jumlah SMP:</label>
                     <input type="number" name="jumlah_smp" id="jumlah_smp" value="{{ old('jumlah_smp') }}"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        required>
                     @error('jumlah_smp')
                         <span>{{ $message }}</span>
                     @enderror
@@ -168,7 +189,8 @@
                 <div>
                     <label class="font-bold" for="jumlah_sma">Jumlah SMA:</label>
                     <input type="number" name="jumlah_sma" id="jumlah_sma" value="{{ old('jumlah_sma') }}"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        required>
                     @error('jumlah_sma')
                         <span>{{ $message }}</span>
                     @enderror
@@ -177,7 +199,8 @@
                 <div>
                     <label class="font-bold" for="jumlah_kuliah">Jumlah Kuliah:</label>
                     <input type="number" name="jumlah_kuliah" id="jumlah_kuliah" value="{{ old('jumlah_kuliah') }}"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        required>
                     @error('jumlah_kuliah')
                         <span>{{ $message }}</span>
                     @enderror
@@ -191,7 +214,9 @@
                 <div>
                     <label class="font-bold" for="status_milik_tanah">Status Milik Tanah:</label>
                     <input type="text" name="status_milik_tanah" id="status_milik_tanah"
-                        value="{{ old('status_milik_tanah') }}" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                        value="{{ old('status_milik_tanah') }}"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        required>
                     @error('status_milik_tanah')
                         <span>{{ $message }}</span>
                     @enderror
@@ -200,7 +225,8 @@
                 <div>
                     <label class="font-bold" for="luas_tanah">Luas Tanah:</label>
                     <input type="text" name="luas_tanah" id="luas_tanah" value="{{ old('luas_tanah') }}"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        required>
                     @error('luas_tanah')
                         <span>{{ $message }}</span>
                     @enderror
@@ -208,7 +234,9 @@
 
                 <div>
                     <label class="font-bold" for="keterangan_fasilitas">Keterangan Fasilitas:</label>
-                    <textarea name="keterangan_fasilitas" id="keterangan_fasilitas" rows="3" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Ditulis dengan format, nama_fasilitas(jumlah, kondisi); contoh : masjid(1, baik), kulkas(2, rusak)">{{ old('keterangan_fasilitas') }}</textarea>
+                    <textarea name="keterangan_fasilitas" id="keterangan_fasilitas" rows="3"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Ditulis dengan format, nama_fasilitas(jumlah, kondisi); contoh : masjid(1, baik), kulkas(2, rusak)">{{ old('keterangan_fasilitas') }}</textarea>
                     @error('keterangan_fasilitas')
                         <span>{{ $message }}</span>
                     @enderror
@@ -217,7 +245,8 @@
                 <div>
                     <label class="font-bold" for="sumber_air">Sumber Air:</label>
                     <input type="text" name="sumber_air" id="sumber_air" value="{{ old('sumber_air') }}"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        required>
                     @error('sumber_air')
                         <span>{{ $message }}</span>
                     @enderror
@@ -231,7 +260,8 @@
                 <div>
                     <label class="font-bold" for="tingkat_layak">Tingkat Layak:</label>
                     <input type="text" name="tingkat_layak" id="tingkat_layak" value="{{ old('tingkat_layak') }}"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="pilih antara : layak, belum layak, tidak layak" required>
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="pilih antara : layak, belum layak, tidak layak" required>
                     @error('tingkat_layak')
                         <span>{{ $message }}</span>
                     @enderror
@@ -240,14 +270,16 @@
                 <div class="mb-3">
                     <label class="font-bold" for="prioritas">Prioritas:</label>
                     <input type="text" name="prioritas" id="prioritas" value="{{ old('prioritas') }}"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="pilih antara : prioritas, tidak prioritas" required>
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="pilih antara : prioritas, tidak prioritas" required>
                     @error('prioritas')
                         <span>{{ $message }}</span>
                     @enderror
                 </div>
             </div>
 
-            <button type="submit" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-blue text-gray-800 border border-gray-200 rounded inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-blue-600 text-white hover:bg-blue-600">Simpan</button>
+            <button type="submit"
+                class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-blue text-gray-800 border border-gray-200 rounded inline-block align-middle text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline bg-blue-600 text-white hover:bg-blue-600">Simpan</button>
         </form>
     </div>
 @endsection

@@ -4,7 +4,7 @@
 @section('content')
     <div class="container mx-auto sm:px-4">
         <div class="flex justify-center items-center">
-            <div class="bg-gradient-to-r from-teal-300 to-green-400 mb-10 rounded-lg px-10 w-1/2">
+            <div class="bg-gradient-to-r from-teal-300 to-green-400 mb-10 rounded-lg px-10 w-1/2 shadow-lg">
                 <h1 class="text-4xl font-bold text-center py-4 text-white">Tambah Verifikasi Anggota</h1>
             </div>
         </div>
