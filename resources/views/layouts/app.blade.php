@@ -24,11 +24,12 @@
 </head>
 
 <body class="bg-purple-400">
+  
     {{-- <div class="flex flex-wrap "> --}}
 
     <!-- drawer component -->
     <div id="drawer-navigation"
-        class="fixed top-0 left-0 z-40 w-64 h-screen p-4 bg-purple-200 dark:bg-blue-900 dark:text-white overflow-y-auto transition-transform -translate-x-full dark:bg-gray-800"
+        class="fixed top-0 left-0 z-40 w-64 h-screen p-4  dark:text-white overflow-y-auto transition-transform -translate-x-full backdrop-blur-lg"
         tabindex="-1" aria-labelledby="drawer-navigation-label">
         <a href="/">
             <h5 id="drawer-navigation-label" class="text-base font-semibold text-gray-800 dark:text-white uppercase ">
@@ -82,17 +83,17 @@
 
                         <li>
                             <a href="/calon-anggota"
-                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-blue-400 dark:text-white dark:hover:bg-gray-700 hover:shadow-2xl">Calon
+                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-blue-300 dark:text-white dark:hover:bg-gray-700 hover:shadow-2xl">Calon
                                 Anggota</a>
                         </li>
                         <li>
                             <a href="/verifikasi-calon-anggota"
-                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-blue-400 dark:text-white dark:hover:bg-gray-700 hover:shadow-2xl">Verifikasi
+                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-blue-300 dark:text-white dark:hover:bg-gray-700 hover:shadow-2xl">Verifikasi
                                 Calon Anggota</a>
                         </li>
                         <li>
                             <a href="/anggota"
-                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-blue-400 dark:text-white dark:hover:bg-gray-700 hover:shadow-2xl">
+                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-blue-300 dark:text-white dark:hover:bg-gray-700 hover:shadow-2xl">
                                 Anggota Paskas</a>
                         </li>
 
@@ -118,7 +119,7 @@
                     <ul id="dropdown-example-ortu" class="hidden py-2 space-y-2">
                         <li>
                             <a href="/daftar-ota"
-                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-blue-400 dark:text-white dark:hover:bg-gray-700 hover:shadow-2xl">
+                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-blue-300 dark:text-white dark:hover:bg-gray-700 hover:shadow-2xl">
                                 Orang Tua Asuh</a>
                         </li>
                     </ul>
@@ -144,12 +145,12 @@
                     <ul id="dropdown-example-calon-mitra" class="hidden py-2 space-y-2">
                         <li>
                             <a href="/calon-mitra"
-                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-blue-400 dark:text-white dark:hover:bg-gray-700 hover:shadow-2xl">Calon
+                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-blue-300 dark:text-white dark:hover:bg-gray-700 hover:shadow-2xl">Calon
                                 Mitra</a>
                         </li>
                         <li>
                             <a href="/pondok"
-                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-blue-400 dark:text-white dark:hover:bg-gray-700 hover:shadow-2xl">Daftar
+                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-blue-300 dark:text-white dark:hover:bg-gray-700 hover:shadow-2xl">Daftar
                                 Mitra</a>
                         </li>
                     </ul>
@@ -177,17 +178,17 @@
                     <ul id="dropdown-example-daftar-trip" class="hidden py-2 space-y-2">
                         <li>
                             <a href="/daftar_trip"
-                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-blue-400 dark:text-white dark:hover:bg-gray-700 hover:shadow-2xl">Daftar
+                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-blue-300 dark:text-white dark:hover:bg-gray-700 hover:shadow-2xl">Daftar
                                 Trip</a>
                         </li>
                         <li>
                             <a href="/trip-penyaluran-dana"
-                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-blue-400 dark:text-white dark:hover:bg-gray-700 hover:shadow-2xl">Trip
+                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-blue-300 dark:text-white dark:hover:bg-gray-700 hover:shadow-2xl">Trip
                                 Distribusi Beras</a>
                         </li>
                         <li>
                             <a href="/stok"
-                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-blue-400 dark:text-white dark:hover:bg-gray-700 hover:shadow-2xl">Beras
+                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-blue-300 dark:text-white dark:hover:bg-gray-700 hover:shadow-2xl">Beras
                                 Masuk</a>
                         </li>
                     </ul>
@@ -216,11 +217,11 @@
                     <ul id="dropdown-example-daftar-account" class="hidden py-2 space-y-2">
                         <li>
                             <a href="/peran"
-                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-blue-400 dark:text-white dark:hover:bg-gray-700 hover:shadow-2xl">Peran</a>
+                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-blue-300 dark:text-white dark:hover:bg-gray-700 hover:shadow-2xl">Peran</a>
                         </li>
                         <li>
                             <a href="/user"
-                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-blue-400 dark:text-white dark:hover:bg-gray-700 hover:shadow-2xl">User</a>
+                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-blue-300 dark:text-white dark:hover:bg-gray-700 hover:shadow-2xl">User</a>
                         </li>
                     </ul>
                 </li>
@@ -245,7 +246,7 @@
 
                     <ul id="dropdown-example-setting-theme" class="hidden py-2 space-y-2">
                         <li
-                            class="flex items-center w-full p-2 text-yellow-400 transition duration-75 rounded-lg pl-11 group hover:bg-blue-400 dark:text-white dark:hover:bg-gray-700 hover:shadow-2xl">
+                            class="flex items-center w-full p-2 text-yellow-400 transition duration-75 rounded-lg pl-11 group hover:bg-blue-300 dark:text-white dark:hover:bg-gray-700 hover:shadow-2xl">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor"
                                 class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
                                 <path
@@ -254,7 +255,7 @@
                             <button type="button" onclick="setLightMode()">Light</button>
                         </li>
                         <li
-                            class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-blue-400 dark:text-white dark:hover:bg-gray-700 hover:shadow-2xl">
+                            class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-blue-300 dark:text-white dark:hover:bg-gray-700 hover:shadow-2xl">
                             <svg class="dark:text-yellow-300" xmlns="http://www.w3.org/2000/svg" width="20"
                                 fill="currentColor" class="bi bi-moon-stars" viewBox="0 0 16 16">
                                 <path
@@ -283,7 +284,7 @@
                     <ul id="dropdown-example-opsi" class="hidden py-2 space-y-2">
                         <li>
                             <a href="/profile"
-                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-blue-400 dark:text-white dark:hover:bg-gray-700 hover:shadow-2xl">
+                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-blue-300 dark:text-white dark:hover:bg-gray-700 hover:shadow-2xl">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="23" fill="currentColor"
                                     class="bi bi-person-lines-fill" viewBox="0 0 16 16">
                                     <path
@@ -292,7 +293,7 @@
                                 My Profile</a>
                         </li>
                         <li>
-                            <a class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-blue-400 dark:hover:bg-gray-700 hover:shadow-2xl hover:text-red-500 dark:text-red-700"
+                            <a class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-blue-300 dark:hover:bg-gray-700 hover:shadow-2xl hover:text-red-500 dark:text-red-700"
                                 href="{{ route('logout') }}"
                                 onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="23" fill="currentColor"
@@ -315,9 +316,10 @@
     </div>
 
 
-    <div class="mt-12 h-screen">@yield('content')</div>
+    <div class="mt-12">@yield('content')</div>
 
     {{-- </div> --}}
+  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
     <script>
         // Fungsi untuk mengatur tema ke mode Light
@@ -346,6 +348,8 @@
 
         // Panggil fungsi checkTheme saat halaman dimuat
         checkTheme();
+
+       
     </script>
 </body>
 
@@ -358,21 +362,21 @@
 
 
 {{-- <li>   ================= MENU SIDEBAR DARI FLOWBITE YANG GA KEPAKE
-             <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-blue-400 dark:hover:bg-gray-700">
+             <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-blue-300 dark:hover:bg-gray-700">
                 <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-9000 transition dura5on-75  group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
                 <span class="flex-1 ml-3 whitespace-nowrap">Kanban</span>
                 <span class="inline-flex items-center justify-center px-2 ml-3 text-sm font-medium text-gray-800 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">Pro</span>
              </a>
           </li>
           <li>
-             <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-blue-400 dark:hover:bg-gray-700">
+             <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-blue-300 dark:hover:bg-gray-700">
                 <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75  group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8.707 7.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l2-2a1 1 0 00-1.414-1.414L11 7.586V3a1 1 0 10-2 0v4.586l-.293-.293z"></path><path d="M3 5a2 2 0 012-2h1a1 1 0 010 2H5v7h2l1 2h4l1-2h2V5h-1a1 1 0 110-2h1a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"></path></svg>
                 <span class="flex-1 ml-3 whitespace-nowrap">Inbox</span>
                 <span class="inline-flex items-center justify-center w-3 h-3 p-3 ml-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">3</span>
              </a>
           </li> 
           <li>
-             <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-blue-400 dark:hover:bg-gray-700">
+             <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-blue-300 dark:hover:bg-gray-700">
                 <svg aria-hidden="true" class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75  group-hover:text-gray-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"></path></svg>
                 <span class="flex-1 ml-3 whitespace-nowrap">Products</span>
              </a>

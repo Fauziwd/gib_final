@@ -1,4 +1,4 @@
-<nav class="bg-purple-200 dark:bg-blue-900 dark:text-white dark:bg-blue-950 shadow-lg">
+<nav class="bg-purple-200  dark:text-white dark:bg-blue-950 shadow-lg">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <div class="flex items-center flex-shrink-0 mr-6">
             <a href="#" class="flex items-center" data-tooltip-target="tooltip" data-tooltip-placement="top">
@@ -7,11 +7,10 @@
                     Beras</span>
             </a>
 
-            <div id="tooltip" role="tooltip"
-                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-700 rounded-lg shadow-lg opacity-0 tooltip dark:bg-gray-700">
+            <div id="tooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-gray-700 rounded-lg shadow-lg opacity-0 tooltip bg-opacity-50 backdrop-blur-lg dark:bg-opacity-50 dark:bg-gray-900">
                 Beras Terbaik Untuk Orang Terbaik
-                <div class="tooltip-arrow" data-popper-arrow></div>
-            </div>
+               
+              </div>              
         </div>
 
         <div class="text-center">

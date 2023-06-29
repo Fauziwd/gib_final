@@ -20,7 +20,7 @@
             @csrf
 
             <div class="mb-4">
-                <label for="calon_anggota_id" class="block mb-2 font-bold text-gray-800">Nama Anggota</label>
+                <label for="calon_anggota_id" class="block mb-2 font-bold text-gray-800 dark:text-white">Nama Anggota</label>
                 <select name="calon_anggota_id" class="block w-full py-2 px-4 mb-2 text-gray-800 bg-white border border-gray-300 rounded" required>
                     <option value="">Pilih Anggota</option>
                     @foreach ($calonAnggota as $a)
@@ -30,7 +30,7 @@
             </div>
 
             <div class="mb-4">
-                <label for="verifikasi" class="block mb-2 font-bold text-gray-800">Verifikasi</label>
+                <label for="verifikasi" class="block mb-2 font-bold text-gray-800 dark:text-white">Verifikasi</label>
                 <select name="verifikasi" class="block w-full py-2 px-4 mb-2 text-gray-800 bg-white border border-gray-300 rounded" required>
                     <option value="0">Belum Terverifikasi</option>
                     <option value="1">Terverifikasi</option>
@@ -38,7 +38,7 @@
             </div>
 
             <div class="mb-4">
-                <label for="catatan" class="block mb-2 font-bold text-gray-800">Catatan</label>
+                <label for="catatan" class="block mb-2 font-bold text-gray-800 dark:text-white">Catatan</label>
                 <textarea name="catatan" class="block w-full py-2 px-4 mb-2 text-gray-800 bg-white border border-gray-300 rounded" rows="4" required></textarea>
             </div>
 

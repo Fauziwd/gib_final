@@ -30,13 +30,13 @@
     @method('PUT')
 
     <div class="mb-4">
-      <label for="urutan_trip" class="block">Urutan Trip:</label>
-      <input type="number" name="urutan_trip" class="block w-full py-2 px-4 mb-2 text-base leading-normal bg-white text-gray-800 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" value="{{ $tripPenyaluranDana->urutan_trip }}" required>
+      <label for="urutan_trip" class="block dark:text-white font-bold">Urutan Trip:</label>
+      <input type="number" name="urutan_trip" class="block dark:bg-gray-300 w-full py-2 px-4 mb-2 text-base leading-normal bg-white text-gray-800 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" value="{{ $tripPenyaluranDana->urutan_trip }}" required>
     </div>
 
     <div class="mb-4">
-      <label for="trip_id" class="block">Trip:</label>
-      <select name="trip_id" class="block w-full py-2 px-4 mb-2 text-base leading-normal bg-white text-gray-800 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+      <label for="trip_id" class="block dark:text-white font-bold">Trip:</label>
+      <select name="trip_id" class="block dark:bg-gray-300 w-full py-2 px-4 mb-2 text-base leading-normal bg-white text-gray-800 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
         @foreach ($daftarTrip as $trip)
         <option value="{{ $trip->id }}" {{ $tripPenyaluranDana->trip_id == $trip->id ? 'selected' : '' }}>{{ $trip->nama_trip }}</option>
         @endforeach
@@ -44,8 +44,8 @@
     </div>
 
     <div class="mb-4">
-        <label for="pondok_id" class="block">Pondok:</label>
-        <select name="pondok_id" class="block w-full py-2 px-4 mb-2 text-base leading-normal bg-white text-gray-800 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
+        <label for="pondok_id" class="block dark:text-white font-bold">Pondok:</label>
+        <select name="pondok_id" class="block dark:bg-gray-300 w-full py-2 px-4 mb-2 text-base leading-normal bg-white text-gray-800 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required>
           @foreach ($pondok as $pondokItem)
           <option value="{{ $pondokItem->id }}" {{ $tripPenyaluranDana->pondok_id == $pondokItem->id ? 'selected' : '' }}>{{ $pondokItem->calonMitra->nama_pondok }}</option>
           @endforeach

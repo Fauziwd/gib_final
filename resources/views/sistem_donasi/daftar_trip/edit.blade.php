@@ -2,7 +2,7 @@
 @include('layouts.navbar')
 
 @section('content')
-    <div class="container mx-auto sm:px-4">
+    <div class="container h-screen mx-auto sm:px-4">
         <div class="flex flex-wrap ">
             <div class="lg:w-full pr-4 pl-4 margin-tb">
                 <div class="flex justify-center items-center">
@@ -30,18 +30,18 @@
 
             <div class="flex flex-wrap ">
                 <div class="md:w-full pr-4 pl-4">
-                    <div class="mb-4">
+                    <div class="mb-4 dark:text-white">
                         <strong>Nama Trip:</strong>
                         <input type="text" name="nama_trip" value="{{ $daftarTrip->nama_trip }}"
-                            class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded"
+                            class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white dark:bg-gray-200 dark:text-blue-900 text-gray-800 border border-gray-200 rounded"
                             placeholder="Nama Trip">
                     </div>
                 </div>
                 <div class="md:w-full pr-4 pl-4">
-                    <div class="mb-4">
+                    <div class="mb-4 dark:text-white">
                         <strong>Keterangan:</strong>
                         <textarea
-                            class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded"
+                            class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white dark:bg-gray-200 dark:text-blue-900 text-gray-800 border border-gray-200 rounded"
                             style="height:150px" name="keterangan" placeholder="Keterangan">{{ $daftarTrip->keterangan }}</textarea>
                     </div>
                 </div>

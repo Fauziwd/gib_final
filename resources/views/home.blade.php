@@ -5,7 +5,7 @@
     <div class="w-1/4 pb-6">
         <div class="h-32 flex items-center justify-center">
             <p id="digital-clock"
-                class="text-gray-800 dark:text-white font-bold text-4xl lg:text-6xl sm:text-sm drop-shadow-lg">Jam</p>
+                class="text-gray-800 dark:text-red-500 font-bold text-4xl lg:text-6xl sm:text-sm drop-shadow-lg">Jam</p>
         </div>
     </div>
     <div class="w-2/4 pb-6 pr-3 pl-3">
@@ -15,7 +15,7 @@
     </div>
     <div class="w-1/4 pb-6">
         <div class="h-32 flex flex-col items-center justify-center">
-            <p id="date" class="text-gray-800 dark:text-white text-xl">Tanggal</p>
+            <p id="date" class="text-gray-800 dark:text-red-500 text-xl">Tanggal</p>
             <p id="day" class="text-gray-800 dark:text-white text-lg font-bold mt-2">Hari</p>
         </div>
     </div>
@@ -27,19 +27,19 @@
         <canvas id="myChart" class="w-full h-full"></canvas>
     </div>
     <div class="w-full lg:w-3/12 flex flex-col lg:ml-4">
-        <div class="flex flex-col bg-red-500 dark:bg-red-950 rounded-full mb-4 shadow-red">
+        <div class="flex flex-col bg-red-500 dark:bg-red-950 border border-red-500 rounded-full mb-4 shadow-red">
             <div class="p-4">
                 <span class="text-white font-bold">Jumlah Anggota: </span>
                 <span class="text-white"><b>{{ $totalAnggota }}</b> Orang</span>
             </div>
         </div>
-        <div class="flex flex-col bg-blue-300 dark:bg-blue-950 rounded-full shadow-blue mb-4">
+        <div class="flex flex-col bg-blue-300 dark:bg-blue-950 border border-blue-500 rounded-full shadow-blue mb-4">
             <div class="p-4">
                 <span class="text-white font-bold">Jumlah OTA:</span>
                 <span class="text-white"><b>{{ $totaldaftarOta }}</b> Orang</span>
             </div>
         </div>
-        <div class="flex flex-col bg-gray-500 dark:bg-gray-750 shadow-gray rounded-full">
+        <div class="flex flex-col bg-gray-500 dark:bg-gray-750 border border-white-500 shadow-gray rounded-full">
             <div class="p-4">
                 <span class="text-white font-bold">Jumlah Pesantren:</span>
                 <span class="text-white"><b>{{ $totalpondok }}</b>&nbsp; Pondok</span>
@@ -53,14 +53,14 @@
             </div>
         </div>
         <div
-            class="flex flex-col mt-4 bg-yellow-300 dark:bg-yellow-600 border border-yellow-400 shadow-yellow rounded-full">
+            class="flex flex-col mt-4 bg-yellow-500 dark:bg-yellow-600 border border-yellow-300 shadow-yellow rounded-full">
             <div class="p-4">
                 <span class="text-white font-bold">Total Beras Keluar:</span>
                 <span class="text-white"><b>{{ $totalDanaKeluar }}</b>&nbsp; Sak</span>
             </div>
         </div>
         <div
-            class="flex flex-col pb-3 mt-4 bg-purple-200 dark:bg-blue-900 dark:text-white dark:bg-purple-600 border border-purple-400 shadow-purple rounded-lg">
+            class="flex flex-col pb-3 mt-4 bg-purple-200 dark:bg-blue-900  dark:text-white border border-blue-300 shadow-purple rounded-lg">
             <canvas id="myChart2" class="w-full h-auto"></canvas>
         </div>
         {{-- <form action="{{ route('home') }}" method="GET">
@@ -85,7 +85,9 @@
 
     </div>
 
-
+    <section id="loading">
+        <div id="loading-content"></div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         // =========== CHART BAR ============
@@ -204,6 +206,16 @@
 
         var calendarButton = document.getElementById('calendar-button');
         calendarButton.addEventListener('click', openCalendar);
+
+        function showLoading() {
+            document.querySelector('#loading').classList.add('loading');
+            document.querySelector('#loading-content').classList.add('loading-content');
+        }
+
+        function hideLoading() {
+            document.querySelector('#loading').classList.remove('loading');
+            document.querySelector('#loading-content').classList.remove('loading-content');
+        }
     </script>
 
 

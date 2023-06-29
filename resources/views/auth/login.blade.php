@@ -2,11 +2,11 @@
 @include('layouts.navbar')
 
 @section('content')
-    <div class="container mx-auto sm:px-4">
-        <div class="flex flex-wrap justify-center">
+    <div class="container  mx-auto sm:px-4">
+        <div class="flex flex-wrap  justify-center">
             <div class="md:w-2/3 pr-4 pl-4">
-                <div class="relative flex flex-col min-w-0 rounded break-words border bg-white border-1 border-gray-300">
-                    <div class="py-3 px-6 mb-0 bg-gray-200 border-b-1 border-gray-300 text-gray-900">{{ __('Login') }}
+                <div class="relative flex flex-col min-w-0 rounded-lg break-words bg-white dark:bg-blue-900 dark:text-white border-1 shadow-lg border-gray-300">
+                    <div class="py-3 px-6 mb-0 bg-purple-200 rounded-t-lg dark:bg-blue-950 dark:text-white border-b-1 border-gray-300 text-gray-900">{{ __('Login') }}
                     </div>
 
                     @if (session('success'))
@@ -24,7 +24,7 @@
                                 <label for="email"
                                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
                                 <input type="email" id="email"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-500 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     name="email" value="{{ old('email') }}" required autofocus>
 
                                 @error('email')
@@ -39,7 +39,7 @@
                                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
                                     password</label>
                                 <input type="password" id="password"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-500 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     name="password" required>
 
                                 @error('password')
@@ -52,7 +52,7 @@
                             <div class="flex items-start mb-6">
                                 <div class="flex items-center h-5">
                                     <input id="remember" type="checkbox"
-                                        class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                                        class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-500 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
                                         name="remember" {{ old('remember') ? 'checked' : '' }}>
                                 </div>
                                 <label for="remember"

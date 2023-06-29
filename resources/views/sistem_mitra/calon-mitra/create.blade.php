@@ -22,8 +22,8 @@
                 <div class="border mt-5 mb-3 p-2 bg-gray-200 rounded">
                     <h3 class="text-2xl font-bold text-center py-4">Identitas Pondok</h3>
                 </div>
-                <div>
-                    <label class="font-bold" for="nama_pondok">Nama Pondok:</label>
+                <div class="mt-5">
+                    <label class="font-bold dark:text-white" for="nama_pondok">Nama Pondok:</label>
                     <input type="text" name="nama_pondok" id="nama_pondok" value="{{ old('nama_pondok') }}"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         required>
@@ -32,8 +32,8 @@
                     @enderror
                 </div>
 
-                <div>
-                    <label class="font-bold" for="alamat">Alamat:</label>
+                <div class="mt-5">
+                    <label class="font-bold dark:text-white" for="alamat">Alamat:</label>
                     <textarea name="alamat" id="alamat" rows="3"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         required>{{ old('alamat') }}</textarea>
@@ -42,8 +42,8 @@
                     @enderror
                 </div>
 
-                <div>
-                    <label class="font-bold" for="tanggal_berdiri">Tanggal Berdiri:</label>
+                <div class="mt-5">
+                    <label class="font-bold dark:text-white" for="tanggal_berdiri">Tanggal Berdiri:</label>
                     <input type="date" name="tanggal_berdiri" id="tanggal_berdiri" value="{{ old('tanggal_berdiri') }}"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         required>
@@ -58,8 +58,8 @@
                     <h3 class="text-2xl font-bold text-center py-4">Kepengurusan Pondok</h3>
                 </div>
 
-                <div>
-                    <label class="font-bold" for="nama_pimpinan">Nama Pimpinan:</label>
+                <div class="mt-5">
+                    <label class="font-bold dark:text-white" for="nama_pimpinan">Nama Pimpinan:</label>
                     <input type="text" name="nama_pimpinan" id="nama_pimpinan" value="{{ old('nama_pimpinan') }}"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         required>
@@ -68,8 +68,8 @@
                     @enderror
                 </div>
 
-                <div>
-                    <label class="font-bold" for="profesi">Profesi Pimpinan:</label>
+                <div class="mt-5">
+                    <label class="font-bold dark:text-white" for="profesi">Profesi Pimpinan:</label>
                     <input type="text" name="profesi" id="profesi" value="{{ old('profesi') }}"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         required>
@@ -78,8 +78,8 @@
                     @enderror
                 </div>
 
-                <div>
-                    <label class="font-bold" for="alamat_pimpinan">Alamat Pimpinan:</label>
+                <div class="mt-5">
+                    <label class="font-bold dark:text-white" for="alamat_pimpinan">Alamat Pimpinan:</label>
                     <textarea name="alamat_pimpinan" id="alamat_pimpinan" rows="3"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         required>{{ old('alamat_pimpinan') }}</textarea>
@@ -88,8 +88,8 @@
                     @enderror
                 </div>
 
-                <div>
-                    <label class="font-bold" for="no_hp_pimpinan">No. HP Pimpinan:</label>
+                <div class="mt-5">
+                    <label class="font-bold dark:text-white" for="no_hp_pimpinan">No. HP Pimpinan:</label>
                     <input type="text" name="no_hp_pimpinan" id="no_hp_pimpinan" value="{{ old('no_hp_pimpinan') }}"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         required>
@@ -98,8 +98,8 @@
                     @enderror
                 </div>
 
-                <div>
-                    <label class="font-bold" for="jumlah_pengurus_menetap">Jumlah Pengurus Menetap:</label>
+                <div class="mt-5">
+                    <label class="font-bold dark:text-white" for="jumlah_pengurus_menetap">Jumlah Pengurus Menetap:</label>
                     <input type="number" name="jumlah_pengurus_menetap" id="jumlah_pengurus_menetap"
                         value="{{ old('jumlah_pengurus_menetap') }}"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -109,8 +109,8 @@
                     @enderror
                 </div>
 
-                <div>
-                    <label class="font-bold" for="jumlah_pengurus_tidak_menetap">Jumlah Pengurus Tidak Menetap:</label>
+                <div class="mt-5">
+                    <label class="font-bold dark:text-white" for="jumlah_pengurus_tidak_menetap">Jumlah Pengurus Tidak Menetap:</label>
                     <input type="number" name="jumlah_pengurus_tidak_menetap" id="jumlah_pengurus_tidak_menetap"
                         value="{{ old('jumlah_pengurus_tidak_menetap') }}"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -125,8 +125,8 @@
                 <div class="border mt-5 mb-3 p-2 bg-gray-200 rounded">
                     <h3 class="text-2xl font-bold text-center py-4">Keterangan Anak Asuh</h3>
                 </div>
-                <div>
-                    <label class="font-bold" for="jumlah_yatim_piatu">Jumlah Yatim Piatu:</label>
+                <div class="mt-5">
+                    <label class="font-bold dark:text-white" for="jumlah_yatim_piatu">Jumlah Yatim Piatu:</label>
                     <input type="number" name="jumlah_yatim_piatu" id="jumlah_yatim_piatu"
                         value="{{ old('jumlah_yatim_piatu') }}"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -136,8 +136,8 @@
                     @enderror
                 </div>
 
-                <div>
-                    <label class="font-bold" for="jumlah_dhuafa">Jumlah Dhuafa:</label>
+                <div class="mt-5">
+                    <label class="font-bold dark:text-white" for="jumlah_dhuafa">Jumlah Dhuafa:</label>
                     <input type="number" name="jumlah_dhuafa" id="jumlah_dhuafa" value="{{ old('jumlah_dhuafa') }}"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         required>
@@ -146,8 +146,8 @@
                     @enderror
                 </div>
 
-                <div>
-                    <label class="font-bold" for="jumlah_dll">Jumlah Lainnya:</label>
+                <div class="mt-5">
+                    <label class="font-bold dark:text-white" for="jumlah_dll">Jumlah Lainnya:</label>
                     <input type="text" name="jumlah_dll" id="jumlah_dll" value="{{ old('jumlah_dll') }}"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="tulis dengan format, misal -> fakir: 12 ; jika tidak ada maka tulis : 0" required>
@@ -156,8 +156,8 @@
                     @enderror
                 </div>
 
-                <div>
-                    <label class="font-bold" for="jumlah_tk">Jumlah TK:</label>
+                <div class="mt-5">
+                    <label class="font-bold dark:text-white" for="jumlah_tk">Jumlah TK:</label>
                     <input type="number" name="jumlah_tk" id="jumlah_tk" value="{{ old('jumlah_tk') }}"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         required>
@@ -166,8 +166,8 @@
                     @enderror
                 </div>
 
-                <div>
-                    <label class="font-bold" for="jumlah_sd">Jumlah SD:</label>
+                <div class="mt-5">
+                    <label class="font-bold dark:text-white" for="jumlah_sd">Jumlah SD:</label>
                     <input type="number" name="jumlah_sd" id="jumlah_sd" value="{{ old('jumlah_sd') }}"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         required>
@@ -176,8 +176,8 @@
                     @enderror
                 </div>
 
-                <div>
-                    <label class="font-bold" for="jumlah_smp">Jumlah SMP:</label>
+                <div class="mt-5">
+                    <label class="font-bold dark:text-white" for="jumlah_smp">Jumlah SMP:</label>
                     <input type="number" name="jumlah_smp" id="jumlah_smp" value="{{ old('jumlah_smp') }}"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         required>
@@ -186,8 +186,8 @@
                     @enderror
                 </div>
 
-                <div>
-                    <label class="font-bold" for="jumlah_sma">Jumlah SMA:</label>
+                <div class="mt-5">
+                    <label class="font-bold dark:text-white" for="jumlah_sma">Jumlah SMA:</label>
                     <input type="number" name="jumlah_sma" id="jumlah_sma" value="{{ old('jumlah_sma') }}"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         required>
@@ -196,8 +196,8 @@
                     @enderror
                 </div>
 
-                <div>
-                    <label class="font-bold" for="jumlah_kuliah">Jumlah Kuliah:</label>
+                <div class="mt-5">
+                    <label class="font-bold dark:text-white" for="jumlah_kuliah">Jumlah Kuliah:</label>
                     <input type="number" name="jumlah_kuliah" id="jumlah_kuliah" value="{{ old('jumlah_kuliah') }}"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         required>
@@ -211,8 +211,8 @@
                 <div class="border mt-5 mb-3 p-2 bg-gray-200 rounded">
                     <h3 class="text-2xl font-bold text-center py-4">Kondisi Pondok</h3>
                 </div>
-                <div>
-                    <label class="font-bold" for="status_milik_tanah">Status Milik Tanah:</label>
+                <div class="mt-5">
+                    <label class="font-bold dark:text-white" for="status_milik_tanah">Status Milik Tanah:</label>
                     <input type="text" name="status_milik_tanah" id="status_milik_tanah"
                         value="{{ old('status_milik_tanah') }}"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -222,8 +222,8 @@
                     @enderror
                 </div>
 
-                <div>
-                    <label class="font-bold" for="luas_tanah">Luas Tanah:</label>
+                <div class="mt-5">
+                    <label class="font-bold dark:text-white" for="luas_tanah">Luas Tanah:</label>
                     <input type="text" name="luas_tanah" id="luas_tanah" value="{{ old('luas_tanah') }}"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         required>
@@ -232,8 +232,8 @@
                     @enderror
                 </div>
 
-                <div>
-                    <label class="font-bold" for="keterangan_fasilitas">Keterangan Fasilitas:</label>
+                <div class="mt-5">
+                    <label class="font-bold dark:text-white" for="keterangan_fasilitas">Keterangan Fasilitas:</label>
                     <textarea name="keterangan_fasilitas" id="keterangan_fasilitas" rows="3"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="Ditulis dengan format, nama_fasilitas(jumlah, kondisi); contoh : masjid(1, baik), kulkas(2, rusak)">{{ old('keterangan_fasilitas') }}</textarea>
@@ -242,8 +242,8 @@
                     @enderror
                 </div>
 
-                <div>
-                    <label class="font-bold" for="sumber_air">Sumber Air:</label>
+                <div class="mt-5">
+                    <label class="font-bold dark:text-white" for="sumber_air">Sumber Air:</label>
                     <input type="text" name="sumber_air" id="sumber_air" value="{{ old('sumber_air') }}"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         required>
@@ -257,8 +257,8 @@
                 <div class="border mt-5 mb-3 p-2 bg-gray-200 rounded">
                     <h3 class="text-2xl font-bold text-center py-4">Penilaian Surveyor</h3>
                 </div>
-                <div>
-                    <label class="font-bold" for="tingkat_layak">Tingkat Layak:</label>
+                <div class="mt-5">
+                    <label class="font-bold dark:text-white" for="tingkat_layak">Tingkat Layak:</label>
                     <input type="text" name="tingkat_layak" id="tingkat_layak" value="{{ old('tingkat_layak') }}"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="pilih antara : layak, belum layak, tidak layak" required>
@@ -267,8 +267,8 @@
                     @enderror
                 </div>
 
-                <div class="mb-3">
-                    <label class="font-bold" for="prioritas">Prioritas:</label>
+                <div class="mb-3" class="mt-5">
+                    <label class="font-bold dark:text-white" for="prioritas">Prioritas:</label>
                     <input type="text" name="prioritas" id="prioritas" value="{{ old('prioritas') }}"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                         placeholder="pilih antara : prioritas, tidak prioritas" required>

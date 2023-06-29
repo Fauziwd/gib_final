@@ -2,7 +2,7 @@
 @include('layouts.navbar')
 
 @section('content')
-    <div class="container mx-auto h-screen sm:px-4">
+    <div class="container mx-auto sm:px-4">
         <div class="flex justify-center items-center">
             <div class="bg-purple-200 dark:bg-blue-900 dark:text-white mb-10 rounded-lg px-10 w-1/2 shadow-lg">
                 <h1 class="text-4xl font-bold text-center py-4">Daftar Pemasukan Beras</h1>
@@ -10,7 +10,7 @@
         </div>
         <div class="mt-10 mb-6">
             <a href="{{ route('stok.create') }}"
-                class="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Tambah
+                class="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-950/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Tambah
                 Catatan Pemasukan</a>
         </div>
 

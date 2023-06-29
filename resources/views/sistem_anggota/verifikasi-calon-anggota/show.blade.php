@@ -9,9 +9,9 @@
             </div>
         </div>
 
-        <table class="relative flex flex-col min-w-0 rounded break-words border bg-white border-1 border-gray-300">
+        <table class="relative flex flex-col min-w-0 rounded break-words border bg-white dark:bg-gray-400 border-1 border-gray-300">
             <tr>
-                <th class="py-3 px-6 mb-0 bg-gray-200 border-b-1 border-gray-300 text-gray-900" colspan="2">
+                <th class="py-3 px-6 mb-0 bg-gray-200 dark:bg-blue-950 dark:text-white rounded border-b-1 border-gray-300 text-gray-900" colspan="2">
                     Calon Anggota
                 </th>
             </tr>
@@ -26,9 +26,9 @@
             <!-- Add other information about the candidate member -->
         </table>
 
-        <table class="relative flex flex-col min-w-0 rounded break-words border bg-white border-1 border-gray-300 mt-4">
+        <table class="relative flex flex-col min-w-0 rounded break-words border bg-white dark:bg-gray-400 border-1 border-gray-300 mt-4">
             <tr>
-                <th class="py-3 px-6 mb-0 bg-gray-200 border-b-1 border-gray-300 text-gray-900" colspan="2">
+                <th class="py-3 px-6 mb-0 bg-gray-200 dark:bg-blue-950 dark:text-white rounded border-b-1 border-gray-300 text-gray-900" colspan="2">
                     Verifikasi
                 </th>
             </tr>
@@ -36,9 +36,9 @@
                 <td class="flex-auto p-6">
                     <strong>Status :</strong>
                 </td>
-                <td class="flex-auto p-6">
+                <td class="flex-auto p-6 {{ $verifikasiAnggota->verifikasi ? 'text-green-700' : 'text-red-400' }}">
                     {{ $verifikasiAnggota->verifikasi ? 'Terverifikasi' : 'Belum Terverifikasi' }}
-                </td>
+                </td>                
             </tr>
             <tr>
                 <td class="flex-auto p-6">
